@@ -16,7 +16,7 @@ class PlatesController < ApplicationController
 
   # GET /plates/new
   def new
-    @plate = Plate.new
+    @plate = Plate.new(course_id: params[:course_id])
   end
 
   # GET /plates/1/edit

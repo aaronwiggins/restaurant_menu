@@ -26,13 +26,15 @@ class PlatesControllerTest < ActionController::TestCase
 
   test "should show plate" do
     get :show, id: @plate
-    assert_response :success
+    assert_redirected_to edit_plate_path
   end
+
 
   test "should get edit" do
     get :edit, id: @plate
     assert_response :success
   end
+
 
   test "should update plate" do
     patch :update, id: @plate, plate: { course_id: @plate.course_id, description: @plate.description, name: @plate.name, price: @plate.price }
