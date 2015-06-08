@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+
+two:
+  name: MyString
+
+# three:
+#   id: 1
+#   name: "Appetizer"
+#
+# four:
+#   id: 2
+#   name: "Soup"
+#
+# five:
+#   id: 3
+#   name: "Starch With Vegetables"
+#
+# six:
+#   id: 4
+#   name: "Entree"
+#
+# seven:
+#   id: 5
+#   name: "Desert"

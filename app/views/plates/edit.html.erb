@@ -1,0 +1,7 @@
+<h1>Editing Plate</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @plate %> |
+<%= link_to 'Back', plates_path %>
+<%= link_to 'Destroy', @plate, method: :delete, data: { confirm: 'Are you sure?' } %> 
