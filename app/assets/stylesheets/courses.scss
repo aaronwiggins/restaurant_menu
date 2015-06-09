@@ -1,6 +1,49 @@
 // Place all the styles related to the courses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$primary-color: #fb0000;
+
+body, .jumbotron {
+  background-color: #fefbf6;
+  color: $primary-color;
+}
+
 .media-object{
   max-width: 200px;
+}
+
+.row {
+  .media-heading {
+    .col-md-offset-9 {
+      color: $primary-color;
+    }
+    a {
+      text: bold;
+      text-decoration: none;
+      color: $primary-color;
+    }
+    a:hover{
+      color: $primary-color;
+    }
+  }
+}
+
+div .page-header {
+  text-align: center;
+}
+
+.col-md-offset-1 {
+  border-bottom-style: solid;
+  border-bottom-color: #337ab7;
+  padding: 1em 0 1em 0;
+  color: $primary-color;
+}
+
+.row div {
+  color: #337ab7;
+}
+
+
+div .row a:hover{
+  color: $primary-color;
 }

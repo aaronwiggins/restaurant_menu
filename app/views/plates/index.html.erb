@@ -1,15 +1,18 @@
 <p id="notice"><%= notice %></p>
 <div class="jumbotron">
   <div class="page-header">
-    <h1>Course Menu<small> made from home</small></h1>
+    <h1>Course Menu</h1>
+    <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
   <% @courses.each_with_index do |course, count| %>
-    <h3>
+    <h2 class="row">
+      <div class="col-md-offset-1">
       <%= course.name %>
-    </h3>
+      </div>
+    </h2>
     <div class="media">
       <div class="media-left">
         <a href="#">
@@ -18,24 +21,33 @@
       </div>
       <div class="media-body">
         <h4 class="media-heading">
-          <div class="col-md-4">Name</div>
-          <div class="col-md-4">Description</div>
-          <div class="col-md-3">Price</div>
-          <div class="col-md-1">Course</div>
+          <div class="col-md-offset-9">Course</div>
         </h4>
         <% course.plates.each do |plate| %>
-          <div class="col-md-4"><%= link_to plate.name , edit_plate_path(plate) %></div>
-          <div class="col-md-4"><%= plate.description %></div>
-          <div class="col-md-3"><%= plate.price %></div>
-          <div class="col-md-1"><%= plate.course_id %></div>
+        <div class="row">
+          <div class="col-sm-11">
+            <h3 class="media-heading">
+              <%= link_to plate.name , edit_plate_path(plate) %>
+            </h3>
             <div class="row">
-              <div class="col-md-12"><%= link_to 'New Plate', new_plate_path(course_id: course.id) %></div>
+              <div class="col-xs-8 col-sm-8">
+                <%= plate.description %>
+              </div>
+              <div class="col-xs-2 col-sm-2">
+                <%= plate.price %>
+              </div>
+              <div class="col-xs-1 col-sm-1">
+                <%= plate.course_id %>
+              </div>
+              <div class="col-xs-1 col-sm-1">
+                <%= link_to 'New Plate', new_plate_path(course_id: course.id) %>
+              </div>
             </div>
+          </div>
+        </div>
         <% end %>
       </div>
     </div>
+    <% end %>
   </div>
 </div>
-  </div>
-</div>
-<% end %>

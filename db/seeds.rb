@@ -30,7 +30,7 @@ Plate.create!(
 )
 
 Plate.create!(
-  name: "Slow-roasted duck with miniature watermelon cucumbers, a red grapefruit gastrique and chickpea crepes",
+  name: "Slow-roasted duck with miniature watermelon cucumbers",
   price: 18.00,
   description: "The duck is roasted slow and low, just salt and pepper. The meat is soft, the skin crispy, and is easily torn into pieces that are tossed in the syrupy grapefruit reduction. The chickpea crepes have some herbs in them, mostly mint which is really pretty and it helps make them very tender.",
   course_id: 4
